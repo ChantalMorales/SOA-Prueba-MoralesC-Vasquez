@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    
+    <cartelera>
+        <pelicula id="1">
+            <codigo>001</codigo>
+            <titulo>Batman Dark Knight Rises</titulo>
+            <anio>2012</anio>
+            <duracion>
+                <horas>3</horas>
+                <minutos>2</minutos>
+                <segundos>36</segundos>
+            </duracion>
+            <nacionalidad>EEUU</nacionalidad>
+            <genero>Accion</genero>
+            <clasificacion>MAYORES DE 13</clasificacion>
+            <director>
+                <nombre>Cristopher</nombre>
+                <apellido>Nolan</apellido>
+                <fechaNacimiento>
+                    <anio>1970</anio>
+                    <mes>Julio</mes>
+                    <dia>30</dia>
+                </fechaNacimiento>
+            </director>
+            <reparto>
+                <actoresPrincipales>
+                    <nombresOriginales>Cristhian Bale</nombresOriginales>
+                    <nombrePelicula>Bruce Wayne</nombrePelicula>
+                </actoresPrincipales>
+                <actoresSecundarios>
+                    <nombresOriginales>Anne Hathaway</nombresOriginales>
+                    <nombrePelicula>Selina Kyle</nombrePelicula>
+                </actoresSecundarios>
+                <dobles>
+                    <nombresOriginales>James Brolin</nombresOriginales>
+                    <sustituye>Cristhian Bale</sustituye>
+                </dobles>
+            </reparto>
+            <sinopsis>Ocho años después de asumir la culpa por la muerte de Harvey Dent y desaparecer en la noche, Batman se ve obligado a salir del exilio autoimpuesto gracias a una ladrona astuta y a un terrorista despiadado.</sinopsis>
+        </pelicula>
+        
+        <pelicula id="2">
+            <codigo>002</codigo>
+            <titulo>Spiderman 2</titulo>
+            <anio>2004</anio>
+            <duracion>
+                <horas>2</horas>
+                <minutos>7</minutos>
+                <segundos>00</segundos>
+            </duracion>
+            <nacionalidad>EEUU</nacionalidad>
+            <genero>Ciencia Ficción</genero>
+            <clasificacion>MAYORES DE 13</clasificacion>
+            <director>
+                <nombre>Sam</nombre>
+                <apellido>Raimi</apellido>
+                <fechaNacimiento>
+                    <anio>1959</anio>
+                    <mes>Octubre</mes>
+                    <dia>23</dia>
+                </fechaNacimiento>
+            </director>
+            <reparto>
+                <actoresPrincipales>
+                    <nombresOriginales>Tobey Maguire</nombresOriginales>
+                    <nombrePelicula>Peter Parker</nombrePelicula>
+                </actoresPrincipales>
+                <actoresSecundarios>
+                    <nombresOriginales>Kirsten Dunst</nombresOriginales>
+                    <nombrePelicula>Mary Jane Watson</nombrePelicula>
+                </actoresSecundarios>
+                <dobles>
+                    <nombresOriginales>Stephen Dawson</nombresOriginales>
+                    <sustituye>Tobey Maguire</sustituye>
+                </dobles>
+            </reparto>
+            <sinopsis>El atormentado Peter Parker lucha contra un científico siniestro que utiliza sus tentáculos mecánicos con fines destructivos.</sinopsis>
+        </pelicula>
+        
+    </cartelera>
+    
+</root>
