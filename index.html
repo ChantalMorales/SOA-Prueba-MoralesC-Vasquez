@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Teórica 1</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <h1 class="title">BATALLA POKEMON</h1>
+
+    <TABLE BORDER id='listpokemon' class='table'>
+        <TR>
+            <TD>
+                <div class="pokemon" id="pokemon-1">
+                    <img>
+                    <p></p>
+                </div>
+            </TD>
+            <TD ROWSPAN=2>
+                <div class="vs">
+                    VS
+                </div>
+            </TD>
+            <TD>
+                <div class="pokemon" id="pokemon-2">
+                    <img>
+                    <p></p>
+                </div>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <div class="pokemon" id="pokemon-3">
+                    <img>
+                    <p></p>
+                </div>
+            </TD>
+            <TD>
+                <div class="pokemon" id="pokemon-4">
+                    <img>
+                    <p></p>
+                </div>
+            </TD>
+        </TR>
+    </TABLE>
+
+    <button class="button" onclick="getPokemons()">COMENZAR</button>
+
+    <h1>Integrantes:</h1>
+    <ul>
+        <li>Chantal Morales</li>
+        <li>Israel Vásquez</li>
+
+    </ul>
+
+    <script>
+        let lista = document.getElementById("listpokemon");
+
+        function getPokemon(id, number) {
+
+            fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
+            .then( res =>{
+                console.log(res);
+                res.json()
+                .then(pokemon=>{
+                    console.log(pokemon);
+                  showPokemon(pokemon,number)
+                })
+            }) 
+
+        }
+
+        function getPokemons() {
+            let firstPokemon = Math.round(Math.random() * 150);
+            let secondPokemon = Math.round(Math.random() * 150);
+            let thirdPokemon = Math.round(Math.random() * 150);
+            let fourthPokemon = Math.round(Math.random() * 150);
+            getPokemon(firstPokemon, 1);
+            getPokemon(secondPokemon, 2);
+            getPokemon(thirdPokemon, 3);
+            getPokemon(fourthPokemon, 4);
+        }
+
+        function showPokemon(pokemon, id) {
+
+            let item = lista.querySelector(`#pokemon-${id}`);
+
+            let img = item.getElementsByTagName("img")[0].setAttribute("src", pokemon.sprites.front_default);
+
+            let nombre = item.getElementsByTagName("p")[0].innerHTML = pokemon.name;
+        }
+
+
+        getPokemons();
+
+
+    </script>
+</body>
+</html>
